@@ -11,8 +11,8 @@ VLESS + WebSocket + TLS configuration behind Cloudflare
   - WebSocket frames are indistinguishable from common real-time web applications
 - The WebSocket path is hidden behind a legitimate HTTPS site, and non-WebSocket access returns normal web content or 404 responses.
 
-### Enterprise Proxy Evasion (e.g. Zscaler)
-- This setup has been **successfully used through Zscaler and similar enterprise proxies** without detection because:
+### Enterprise Proxy Evasion
+- This setup has been testing and **successfully used through Zscaler and similar enterprise proxies** without detection:
   - Connections appear as standard HTTPS sessions to a well-known CDN (Cloudflare)
   - No unusual TLS fingerprints or non-standard ports are exposed
   - WebSocket traffic is common and explicitly permitted by most corporate proxies
